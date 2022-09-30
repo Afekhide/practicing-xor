@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+html, body{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+body{
+    filter: invert(100);
+}
+
+.box {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    top: calc((100vh/2) - (6rem/2));
+    left: calc((100vw/2) - (6rem/2));
+    background: #fff;
+}
+
+#xor{
+    position: absolute;
+    width: min-content;
+    color: #fff;
+    font-size: 4rem;
+    mix-blend-mode: difference;
+    font-family: Kanit, sans-serif;
+}
